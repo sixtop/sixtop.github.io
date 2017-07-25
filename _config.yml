@@ -9,7 +9,7 @@ name: Sixtop.net Homepage
 description: See the light at the end of the SSH tunnel.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/sixtop/sixtop.github.io/master/images/warning.jpg
+avatar: images/warning.jpg
         
 #
 # Flags below are optional
