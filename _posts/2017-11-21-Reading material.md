@@ -15,7 +15,10 @@ _Non-technical_
 
 _Online learning_
 - Coursera: [Build a Modern Computer from First Principles: From Nand to Tetris ](https://www.coursera.org/learn/build-a-computer)
-- edX: [Computation Structures - Part 1: Digital Circuits](https://www.edx.org/course/computation-structures-part-1-digital-mitx-6-004-1x-0)
+- edX: Computation Structures
+  1. [Part 1: Digital Circuits](https://www.edx.org/course/computation-structures-part-1-digital-mitx-6-004-1x-0)
+  2. [Part 2: Computer Architecture](https://www.edx.org/course/computation-structures-2-computer-mitx-6-004-2x)
+  3. [Part 3: Computer Organization](https://www.edx.org/course/computation-structures-3-computer-mitx-6-004-3x-0)
 - Learn about [Electrical Engineering](https://www.allaboutcircuits.com/textbook/)
 
 
