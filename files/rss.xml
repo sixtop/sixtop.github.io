@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rdf:RDF
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns="http://purl.org/rss/1.0/"
+xmlns:cb="http://staging.bis.org/rss-cb/1.0/"
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:dcterms="http://purl.org/dc/terms/"
+xmlns:xsi="http://www.w3c.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.w3c.org/1999/02/22-rdf-syntax-ns#rdf.xsd">
+   <channel rdf:about="http://www.banxico.org.mx/rsscb/rss?canal=tasInt&amp;idioma=es">
+      <title>Banco de México, Tasas de Interés, CETES28</title>
+      <link>http://www.banxico.org.mx/portal-mercado-valores/index.html#CETES</link>
+      <description>Tasas de interés: Fondeo Bancario, TIIE 28 días y Cetes a 28 días.</description>
+      <dc:language>es</dc:language>
+      <items>
+         <rdf:Seq>
+            <rdf:li rdf:resource="http://www.banxico.org.mx/portal-mercado-valores/index.html/20180111"/>
+         </rdf:Seq>
+      </items>
+   </channel>
+   <item rdf:about="http://www.banxico.org.mx/portal-mercado-valores/index.html/20180111">
+      <title><![CDATA[MX: 7.24 CETES28 2018-01-11 BM ]]></title>
+      <link>http://www.banxico.org.mx/portal-mercado-valores/index.html#CETES</link>
+      <description><![CDATA[Títulos de crédito al portador denominados en moneda nacional a cargo del Gobierno Federal. El Decreto mediante el cual la Secretaría de Hacienda y Crédito Público fue autorizada a emitir CETES apareció publicado en el Diario Oficial de la Federación del 28 de noviembre de 1977, el cual fue abrogado por el Decreto publicado en el Diario Oficial de la Federación el 8 de julio de 1993.]]></description>
+      <dc:date>2018-01-09T11:32:40-06:00</dc:date>
+      <dc:language>es</dc:language>
+      <dc:format>text/html</dc:format>
+      <dc:creator>Banco de México</dc:creator>
+      <cb:simpletitle>Cetes 28 días</cb:simpletitle>
+      <cb:statistics>
+         <cb:country>MX</cb:country>
+         <cb:institutionAbbrev>BM</cb:institutionAbbrev>
+         <cb:interestRate>
+            <cb:value frequency="daily business" decimals="2">7.24</cb:value>
+            <cb:rateName>CETES28</cb:rateName>
+         </cb:interestRate>
+      </cb:statistics>
+   </item>
+</rdf:RDF>
+
