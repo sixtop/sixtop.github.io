@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Reading Material
-comments: true
+comments: false
 ---
 
 # It is time for us to learn.
