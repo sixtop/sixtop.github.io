@@ -9,6 +9,31 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <!--<link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>-->
+    <script src="{{ site.baseurl }}/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+      function set_body_top_margin() {
+          // Div after floating div should start at the right place
+          var menuHeight = $("#masthead-fixed").height();
+          $("#wrapper-masthead").css("height", menuHeight);
+
+          // Floating menu when we have enough screen realstate
+          var screenWidth = $(window).height();
+          if ( screenWidth < 800) {
+              $("#masthead-fixed").css("position", "inherit");
+              $("#masthead-fixed").css("left", "0px");
+              $("#masthead-fixed").css("transform", "inherit");
+          }
+          else {
+              $("#masthead-fixed").css("position", "fixed");
+              $("#masthead-fixed").css("left", "50%");
+              $("#masthead-fixed").css("transform", "translate(-50%, 0)");
+          }
+      }
+
+      // change navbar bahavior on load and resize
+      $(document).ready(set_body_top_margin);
+      $(window).resize(set_body_top_margin);
+    </script>
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
@@ -16,8 +41,8 @@
   </head>
 
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
+    <div id="wrapper-masthead">
+      <div id="masthead-fixed" class="container ">
         <header class="masthead clearfix">
           <a href="{{ site.baseurl }}/index.html" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
@@ -29,6 +54,7 @@
           <nav>
             <a href="{{ site.baseurl }}/posts/">Posts</a>
             <a href="{{ site.baseurl }}/about/">About</a>
+            <a href="{{ site.baseurl }}/contact/">Contact</a>
           </nav>
         </header>
       </div>

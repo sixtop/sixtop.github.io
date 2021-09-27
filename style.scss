@@ -160,11 +160,18 @@ Add font reference
 // .masthead
 //
 
-.wrapper-masthead {
-  margin-bottom: 50px;
+#wrapper-masthead {
+  background-color: white;
+}
+
+#masthead-fixed {
+  background-color: white;
+  width: 100%;
+  max-width: 900px;
 }
 
 .masthead {
+  background-color: white;
   padding: 20px 0;
   border-bottom: 1px solid $lightGray;
 
@@ -214,6 +221,7 @@ Add font reference
   margin: -5px 0 0 0;
   color: $gray;
   font-size: 16px;
+  text-align: center;
 
   @include mobile {
     margin: 3px 0;
