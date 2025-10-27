@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    <!--<title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>-->
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
 
     {% include meta.html %}
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--<link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>-->
     <script src="{{ site.baseurl }}/js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript">
       function set_body_top_margin() {
@@ -20,11 +17,13 @@
           var screenWidth = $(window).height();
           if ( screenWidth < 800) {
               $("#masthead-fixed").css("position", "inherit");
+              $("#masthead-fixed").css("z-index", "999");
               $("#masthead-fixed").css("left", "0px");
               $("#masthead-fixed").css("transform", "inherit");
           }
           else {
               $("#masthead-fixed").css("position", "fixed");
+              $("#masthead-fixed").css("z-index", "999");
               $("#masthead-fixed").css("left", "50%");
               $("#masthead-fixed").css("transform", "translate(-50%, 0)");
           }
@@ -35,9 +34,9 @@
       $(window).resize(set_body_top_margin);
     </script>
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="stylesheet" type="text/css" href="{{site.url}}/css/jekyll-photo-gallery.css">
+    <link rel="stylesheet" href="{{ site.url }}/css/justifiedGallery.min.css">
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
   <body>
@@ -48,11 +47,11 @@
 
           <div class="site-info">
             <h1 class="site-name"><a href="{{ site.baseurl }}/index.html">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
+            <!--<p class="site-description">{{ site.description }}</p>-->
           </div>
 
           <nav>
-            <a href="{{ site.baseurl }}/posts/">Posts</a>
+            <a href="{{ site.baseurl }}/photography/">Gallery</a>
             <a href="{{ site.baseurl }}/about/">About</a>
             <a href="{{ site.baseurl }}/contact/">Contact</a>
           </nav>
@@ -74,4 +73,7 @@
 
     {% include analytics.html %}
   </body>
+
+  <!--<script src="{{ site.url }}/js/vendor/jquery-1.9.1.min.js"></script>-->
+  <script src="{{ site.url }}/js/plugins/jquery.justifiedGallery.min.js"></script>
 </html>
