@@ -4,11 +4,51 @@ title: home
 ---
 
 
-Welcome to Sixtop.net
+Welcome!
 ====================
 
- _A digital space for Víctor Palacios_
+You've reached Victor Palacios' personal homepage! Send an email to [victor@sixtop.net](mailto:victor@sixtop.net) using following PGP key:
+ 
 
-Hello and be welcomed to my personal internet page! My name is Victor Palacios and although my profession is software engineer, I have allegedly few more interests that I hope you can read about in the [Posts](/posts/) section.
+```
+-----BEGIN PGP PUBLIC KEY BLOCK-----
 
-\<EOM>
+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
+=WSZw
+-----END PGP PUBLIC KEY BLOCK-----
+
+```
+
